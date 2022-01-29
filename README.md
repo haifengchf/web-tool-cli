@@ -80,13 +80,3 @@ found 22 vulnerabilities (2 low, 16 moderate, 4 high)
 ```
 
 
-
-
-
-
-
-
-
-
-
-# web-tool-cli
