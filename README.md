@@ -4,7 +4,7 @@
 
 ## 什么是WRTL
 
-WRTL是一款前端工程化工具，目的是为了简化搭建前端项目的一些琐碎的配置问题。目前包含eslint配置和依赖的安装、babel配置和依赖的安装；1.1版本会推出webpack配置和依赖的安装等功能。
+WRTL是一款前端工程化工具，目的是为了简化搭建前端项目琐碎配置问题。目前包含eslint配置和依赖安装、babel配置和依赖安装；1.1版本会推出webpack配置和依赖安装等功能。
 
 
 
@@ -47,12 +47,12 @@ web-cli babel-cli // 初始化babel配置及依赖安装
 
 ```
  > web-cli babel-init
-  _              _   _            __        __         _               _____                   _            ____   _   _   _
- | |__     ___  | | | |   ___     \ \      / /   ___  | |__           |_   _|   ___     ___   | |          / ___| | | (_) | |
- | '_ \   / _ \ | | | |  / _ \     \ \ /\ / /   / _ \ | '_ \   _____    | |    / _ \   / _ \  | |  _____  | |     | | | | | |
- | | | | |  __/ | | | | | (_) |     \ V  V /   |  __/ | |_) | |_____|   | |   | (_) | | (_) | | | |_____| | |___  | | | | |_|
- |_| |_|  \___| |_| |_|  \___/       \_/\_/     \___| |_.__/            |_|    \___/   \___/  |_|          \____| |_| |_| (_)
-
+  _              _   _            __        __  ____    _____    ____   _
+ | |__     ___  | | | |   ___     \ \      / / |  _ \  |_   _|  / ___| | |
+ | '_ \   / _ \ | | | |  / _ \     \ \ /\ / /  | |_) |   | |   | |     | |
+ | | | | |  __/ | | | | | (_) |     \ V  V /   |  _ <    | |   | |___  |_|
+ |_| |_|  \___| |_| |_|  \___/       \_/\_/    |_| \_\   |_|    \____| (_)
+ 
 ? 请选择babel配置文件的名称 (Use arrow keys)
 ❯ babel.config.js
   babel.config.json
@@ -77,5 +77,24 @@ found 22 vulnerabilities (2 low, 16 moderate, 4 high)
   run `npm audit fix` to fix them, or `npm audit` for details
  ~~~~~~~~~~~success~~~~~~~~~~~
   
+```
+
+
+
+帮助
+
+```
+web-cli
+
+Usage: index [options] [command]
+
+Options:
+  -v, --version   output the version number
+  -h, --help      display help for command
+
+Commands:
+  eslint-init     初始化安装eslint！！！
+  babel-init      初始化安装babel！！！
+  help [command]  display help for command
 ```
 

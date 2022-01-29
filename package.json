@@ -1,14 +1,14 @@
 {
   "name": "web-raising-tool-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
     "web-cli": "./bin/index.js"
   },
   "scripts": {
-    "eslint-cli": "cross-env NODE_ENV=development npx ./bin/index.js eslint-init",
-    "babel-cli": "cross-env NODE_ENV=development npx node ./bin/index.js babel-init"
+    "eslint-init": "cross-env NODE_ENV=development npx ./bin/index.js eslint-init",
+    "babel-init": "cross-env NODE_ENV=development npx node ./bin/index.js babel-init"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,12 @@
   },
   "keywords": [
     "npm",
+    "react",
+    "vue",
     "babel",
+    "ts",
     "eslint",
+    "webpack",
     "cli"
   ],
   "author": "gale",

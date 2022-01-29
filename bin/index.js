@@ -19,7 +19,7 @@ const program = new Command();
 
 const consoleCommand = process.env.NODE_ENV;
 
-logColor('#ff0000', figlet.textSync('hello Web-Raising-Tool-Cli!', { horizontalLayout: 'full' }));
+logColor('#ff0000', figlet.textSync('hello WRTC!', { horizontalLayout: 'full' }));
 
 program
     .version('1.0.0','-v, --version')
