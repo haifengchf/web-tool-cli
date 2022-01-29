@@ -1,10 +1,10 @@
 {
-  "name": "web-tool-cli",
-  "version": "1.0.0",
+  "name": "web-raising-tool-cli",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
-    "wtc": "./bin/index.js"
+    "web-cli": "./bin/index.js"
   },
   "scripts": {
     "eslint-cli": "cross-env NODE_ENV=development npx ./bin/index.js eslint-init",

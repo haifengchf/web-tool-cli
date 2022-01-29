@@ -1,8 +1,8 @@
-# WTL(web-tool-cli)
+# WRTL(web-raising-tool-cli)
 
 
 
-## 什么是WTL
+## 什么是WRTL
 
 WTL是一款前端工程化的一款工具，目的是为了简化搭建前端项目的一些琐碎的配置问题。目前包含eslint配置和依赖的安装、babel配置和依赖的安装；1.1版本会推出webpack配置和依赖的安装等功能。
 
@@ -22,7 +22,7 @@ npm -v 6.x
 **安装npm包:**
 
 ```
-npm i web-tool-cli
+npm i web-raising-tool-cli
 ```
 
 
@@ -36,9 +36,9 @@ mkdir demo
 cd demo/
 npm init
 	......(package.json选项)
-npm i web-tool-cli
-wtc eslint-cli // 初始化eslint配置及依赖安装
-wtc babel-cli // 初始化babel配置及依赖安装
+npm i web-raising-tool-cli
+web-cli eslint-cli // 初始化eslint配置及依赖安装
+web-cli babel-cli // 初始化babel配置及依赖安装
 ```
 
 
@@ -46,7 +46,7 @@ wtc babel-cli // 初始化babel配置及依赖安装
 **运行效果（babel为例）:**
 
 ```
- > wtc babel-init
+ > web-cli babel-init
   _              _   _            __        __         _               _____                   _            ____   _   _   _
  | |__     ___  | | | |   ___     \ \      / /   ___  | |__           |_   _|   ___     ___   | |          / ___| | | (_) | |
  | '_ \   / _ \ | | | |  / _ \     \ \ /\ / /   / _ \ | '_ \   _____    | |    / _ \   / _ \  | |  _____  | |     | | | | | |
@@ -78,5 +78,4 @@ found 22 vulnerabilities (2 low, 16 moderate, 4 high)
  ~~~~~~~~~~~success~~~~~~~~~~~
   
 ```
-
 
