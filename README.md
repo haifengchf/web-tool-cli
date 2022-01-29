@@ -1,10 +1,10 @@
-# WRTL(web-raising-tool-cli)
+# WRTC(web-raising-tool-cli)
 
 
 
-## 什么是WRTL
+## 什么是WRTC
 
-WRTL是一款前端工程化工具，目的是为了简化搭建前端项目琐碎配置问题。目前包含eslint配置和依赖安装、babel配置和依赖安装；1.1版本会推出webpack配置和依赖安装等功能。
+WRTC是一款前端工程化工具，目的是为了简化搭建前端项目琐碎配置问题。目前包含eslint配置和依赖安装、babel配置和依赖安装；1.1版本会推出webpack配置和依赖安装等功能。
 
 
 
@@ -22,7 +22,7 @@ npm -v 6.x
 **安装npm包:**
 
 ```
-npm i web-raising-tool-cli
+npm i --save-dev web-raising-tool-cli
 ```
 
 
@@ -36,9 +36,9 @@ mkdir demo
 cd demo/
 npm init
 	......(package.json选项)
-npm i web-raising-tool-cli
-web-cli eslint-cli // 初始化eslint配置及依赖安装
-web-cli babel-cli // 初始化babel配置及依赖安装
+npm i --save-dev web-raising-tool-cli
+wrtc eslint // 初始化eslint配置及依赖安装
+wrtc babel // 初始化babel配置及依赖安装
 ```
 
 
@@ -46,7 +46,7 @@ web-cli babel-cli // 初始化babel配置及依赖安装
 **执行效果（babel为例）:**
 
 ```
- > web-cli babel-init
+ > wrtc babel
   _              _   _            __        __  ____    _____    ____   _
  | |__     ___  | | | |   ___     \ \      / / |  _ \  |_   _|  / ___| | |
  | '_ \   / _ \ | | | |  / _ \     \ \ /\ / /  | |_) |   | |   | |     | |
@@ -81,10 +81,10 @@ found 22 vulnerabilities (2 low, 16 moderate, 4 high)
 
 
 
-帮助
+**获取帮助**
 
 ```
-web-cli
+wrtc
 
 Usage: index [options] [command]
 
@@ -93,8 +93,8 @@ Options:
   -h, --help      display help for command
 
 Commands:
-  eslint-init     初始化安装eslint！！！
-  babel-init      初始化安装babel！！！
+  eslint     初始化安装eslint！！！
+  babel      初始化安装babel！！！
   help [command]  display help for command
 ```
 

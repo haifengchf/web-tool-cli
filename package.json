@@ -1,14 +1,14 @@
 {
   "name": "web-raising-tool-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "bin": {
-    "web-cli": "./bin/index.js"
+    "wrtc": "./bin/index.js"
   },
   "scripts": {
-    "eslint-init": "cross-env NODE_ENV=development npx ./bin/index.js eslint-init",
-    "babel-init": "cross-env NODE_ENV=development npx node ./bin/index.js babel-init"
+    "eslint": "cross-env NODE_ENV=development npx ./bin/index.js eslint-init",
+    "babel": "cross-env NODE_ENV=development npx node ./bin/index.js babel-init"
   },
   "repository": {
     "type": "git",

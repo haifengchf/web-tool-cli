@@ -23,17 +23,17 @@ logColor('#ff0000', figlet.textSync('hello WRTC!', { horizontalLayout: 'full' })
 
 program
     .version('1.0.0','-v, --version')
-    .command('eslint-init')
+    .command('eslint')
     .description('初始化安装eslint！！！')
     .action(() => initEslint());
 
 program
-    .command('babel-init')
+    .command('babel')
     .description('初始化安装babel！！！')
     .action(() => initBabel());
 
 // program
-//     .command('webpack-init')
+//     .command('webpack')
 //     .description('初始化安装webpack！！！')
 //     .action(function(){
 //         question()
