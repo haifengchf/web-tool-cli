@@ -69,14 +69,14 @@ initEslint = function () {
                         name: "plugin:@typescript-eslint/recommended",
                         checked: true
                     },
-                    {
-                        name: "plugin:@typescript-eslint/eslint-recommended",
-                        checked: true
-                    },
                     // {
-                    //     name: "@vue/typescript/recommended",
+                    //     name: "plugin:@typescript-eslint/eslint-recommended",
                     //     checked: true
                     // },
+                    {
+                        name: "@vue/typescript/recommended",
+                        checked: true
+                    },
                     {
                         name: "eslint:recommended",
                         checked: true
@@ -143,14 +143,14 @@ initEslint = function () {
 
                 // 处理plugin 表示是否开启 @typescript-eslint
                 if (plugins) {
-                    config.plugins = ['@typescript-eslint'];
+                    // config.plugins = ['@typescript-eslint'];
                     config.parserOptions = {
                         parser: '@typescript-eslint/parser',
-                        ecmaVersion: 6,
+                        // ecmaVersion: 6,
                         sourceType: 'module',
-                        ecmaFeatures: {
-                            jsx: true
-                        }
+                        // ecmaFeatures: {
+                        //     jsx: true
+                        // }
                     }
                 } else {
                     config.parserOptions = {
@@ -189,7 +189,7 @@ initEslint = function () {
                         writeJsonSync(proEslintConfigName, config, { spaces: 4 });
                         fs.writeFile(
                             `${proEslintConfigDir}.eslintignore` ,
-                            '/*_modules/\r\ndist\r\n*.md',
+                            'node_modules\r\ndist\r\n*.md',
                             'utf8',
                             function(error){
                                 if(error){

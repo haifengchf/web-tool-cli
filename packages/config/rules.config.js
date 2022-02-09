@@ -1,4 +1,29 @@
 module.exports = {
+    // prettier
+    // "prettier/prettier": "error",
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/member-delimiter-style': ['error',
+        {
+            multiline: {
+                delimiter: 'none'
+            },
+            singleline: {
+                delimiter: 'comma'
+            }
+        }],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    // js
+
+    'vue/max-attributes-per-line': ['error', {
+        'singleline': {
+            'max': 2
+        },
+        'multiline': {
+            'max': 1
+        }
+    }],
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/name-property-casing': ['error', 'PascalCase'],
@@ -38,7 +63,7 @@ module.exports = {
     curly: [2, 'multi-line'],
     'dot-location': [2, 'property'],
     'eol-last': 2,
-    'eqeqeq': ['error', 'always', { null: 'ignore' }],
+    eqeqeq: ['error', 'always', { null: 'ignore' }],
     'generator-star-spacing': [
         2,
         {
@@ -47,7 +72,7 @@ module.exports = {
         }
     ],
     'handle-callback-err': [2, '^(err|error)$'],
-    'indent': [
+    indent: [
         2,
         2,
         {
@@ -196,7 +221,7 @@ module.exports = {
             // allowTemplateLiterals: true
         }
     ],
-    semi: [2, 'never'],
+    semi: [0, 'never'],
     'semi-spacing': [
         2,
         {

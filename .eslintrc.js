@@ -26,9 +26,7 @@ module.exports = {
         "import/resolver": "webpack"
     },
     "processor": "",
-    "plugins": [
-        "@typescript-eslint"
-    ],
+    // "plugins": [],
     "rules": {
         "vue/singleline-html-element-content-newline": "off",
         "vue/multiline-html-element-content-newline": "off",
